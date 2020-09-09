@@ -1,6 +1,7 @@
 var balX = 50; 
 var balY = 50;
-
+var speedX = 10
+var speedY = 5
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -27,7 +28,15 @@ function draw() {
   // teken een cirkel
   ellipse(balX,balY,80,80);
   
-  balX = balX + 10;
+  balX = balX + speedX;
   
-  balY = balY + 5;
+  balY = balY + speedY;
+
+  if (balX >= 1280 ) {
+      speedX = speedX * -1;
+  }
+  if (balY >= 720) {
+      speedY = speedY * -1;
+  }
+
 }
