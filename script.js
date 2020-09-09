@@ -1,3 +1,6 @@
+var balX = 50; 
+
+
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -22,5 +25,7 @@ function draw() {
   fill(100, 100, 255);
 
   // teken een cirkel
-  ellipse(50,50,80,80);
+  ellipse(balX,50,80,80);
+  
+  balX = balX + 1;
 }
