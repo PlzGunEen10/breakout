@@ -1,5 +1,5 @@
 var balX = 50; 
-
+var balY = 50;
 
 /**
  * setup
@@ -25,7 +25,9 @@ function draw() {
   fill(100, 100, 255);
 
   // teken een cirkel
-  ellipse(balX,50,80,80);
+  ellipse(balX,balY,80,80);
   
-  balX = balX + 1;
+  balX = balX + 10;
+  
+  balY = balY + 5;
 }
